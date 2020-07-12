@@ -12,7 +12,7 @@ const Search = ({ getQuery }) => {
           autoFocus
           value={text}
           onChange={(e) => {
-            getQuery(e.target.value);
+            getQuery(text);
             setText(e.target.value);
           }}
         />

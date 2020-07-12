@@ -10,11 +10,12 @@ const App = () => {
   const [query, setQuery] = useState('');
 
   const getQuery = (q) => {
-    console.log(q);
     setQuery(q);
   };
   useEffect(() => {
     const fetchItems = async () => {
+      setIsLoading(true);
+
       const result = await axios(
         `https://www.breakingbadapi.com/api/characters?name=${query}`
       );

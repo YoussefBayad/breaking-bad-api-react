@@ -1,10 +1,9 @@
 import React from 'react';
 import Card from './Card';
-import spinner from './spinner';
-
+import Spinner from '../components/Spinner';
 const Cards = ({ items, isLoading }) => {
   return isLoading ? (
-    <spinner />
+    <Spinner />
   ) : (
     <div className="cards">
       {items.map((item) => {
