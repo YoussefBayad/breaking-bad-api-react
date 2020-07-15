@@ -1,9 +1,12 @@
 import React from 'react';
 import Card from './Card';
 import Spinner from '../components/Spinner';
-const Cards = ({ items, isLoading }) => {
+import Empty from './Empty';
+const Cards = ({ items, isLoading, isEmpty, query }) => {
   return isLoading ? (
     <Spinner />
+  ) : isEmpty ? (
+    <Empty query={query} />
   ) : (
     <div className="cards">
       {items.map((item) => {

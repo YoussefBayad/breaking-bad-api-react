@@ -52,7 +52,6 @@ header img {
 }
 
 input[type='text'] {
-  display: block;
   padding: 10px;
   font-size: 20px;
   border: 0;
@@ -143,6 +142,36 @@ input[type='text'] {
 .page:hover {
   background-color: rgb(73, 72, 72);
   transform: scale(1.1);
+}
+/* empty*/
+.empty {
+  widows: 450px;
+  margin: auto;
+  height: 450px;
+  text-align: center;
+}
+.empty span {
+  color: rgb(245, 75, 75);
+}
+/* itemsPerPage*/
+.items-per-page {
+  padding: 0.5rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.7rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 1rem;
+}
+.items-per-page-label {
+  font-weight: bold;
+  text-shadow: 1px 2px black;
+  margin: 0 0.5rem;
+  margin-left: 5rem;
+  font-size: 1rem;
 }
 @media (max-width: 800px) {
   .cards {
