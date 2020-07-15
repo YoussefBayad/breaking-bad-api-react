@@ -13,6 +13,7 @@ const App = () => {
     setQuery(q);
   };
   useEffect(() => {
+    console.log('runs');
     const fetchItems = async () => {
       setIsLoading(true);
 
@@ -28,7 +29,7 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-      <Search getQuery={(q) => getQuery(q)} />
+      <Search query={query} getQuery={(q) => getQuery(q)} />
       <Cards items={items} isLoading={isLoading} />
     </div>
   );
