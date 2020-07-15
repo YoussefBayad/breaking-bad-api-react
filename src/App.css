@@ -120,6 +120,30 @@ input[type='text'] {
   padding-bottom: 10px;
 }
 
+/* pagination */
+.pagination {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page {
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+.page:hover {
+  background-color: rgb(73, 72, 72);
+  transform: scale(1.1);
+}
 @media (max-width: 800px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
